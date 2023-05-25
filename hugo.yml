@@ -1,0 +1,5 @@
+baseURL: "https://blog.danieladamstech.com/"
+title: Daniel Adams Tech
+languageCode: en-us
+paginate: 5
+theme: PaperMod
