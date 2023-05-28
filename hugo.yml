@@ -17,6 +17,9 @@ minify:
 taxonomies:
   tag: tags
 
+permalinks:
+  posts: /:year/:title/
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Daniel Adams Tech
