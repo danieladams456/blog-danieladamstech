@@ -1,5 +1,6 @@
 # Hugo: https://gohugo.io/getting-started/configuration/
 # Theme suggestions: https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
+# TODO: external links in new tab
 
 title: Daniel Adams Tech
 baseURL: https://blog.danieladamstech.com
