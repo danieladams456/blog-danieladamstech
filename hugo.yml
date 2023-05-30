@@ -107,6 +107,7 @@ menu:
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # might not be live? https://gohugo.io/content-management/syntax-highlighting/
+# see /layouts/_default/_markup/render-link.html for opening external links in new tab
 markup:
   highlight:
     noClasses: false
