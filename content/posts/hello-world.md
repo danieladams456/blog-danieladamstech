@@ -1,7 +1,6 @@
 ---
 title: "Hello World"
 date: 2023-05-29T06:00:00-04:00
-draft: true
 tags: ["writing"]
 ---
 
