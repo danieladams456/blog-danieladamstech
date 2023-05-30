@@ -1,5 +1,6 @@
 # Hugo: https://gohugo.io/getting-started/configuration/
 # Theme suggestions: https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
+# TODO: external links in new tab
 
 title: Daniel Adams Tech
 baseURL: https://blog.danieladamstech.com
@@ -38,12 +39,30 @@ params:
     - linkedin
     - reddit
 
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true # maybe, see what I think about this later
+
+  label:
+    text: "Home"
+    # TODO
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Daniel Adams Tech Blog"
+    Content: Practice makes progress
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/danieladams456"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/danieladams15"
+
+  cover:
+
   ### Reviewed above this comment ###
 
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -62,23 +81,6 @@ params:
   #   favicon32x32: "<link / abs url>"
   #   apple_touch_icon: "<link / abs url>"
   #   safari_pinned_tab: "<link / abs url>"
-
-  label:
-    text: "Home"
-    # TODO
-    # icon: /apple-touch-icon.png
-    # iconHeight: 35
-
-  # home-info mode
-  homeInfoParams:
-    Title: "Daniel Adams Tech Blog"
-    Content: Practice makes progress
-
-  socialIcons:
-    - name: github
-      url: "https://github.com/danieladams456"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/danieladams15"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -111,5 +113,5 @@ markup:
     # anchorLineNos: true
     # codeFences: true
     # guessSyntax: true
-    # lineNos: true
+    lineNos: true
     # style: monokai
