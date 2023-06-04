@@ -1,7 +1,7 @@
 ---
 # post comment
 title: "Platforms, Not Products"
-date: 2023-06-05T06:00:00-04:00
+date: 2023-06-04T15:00:00-04:00
 tags: ["architecture"]
 ---
 
