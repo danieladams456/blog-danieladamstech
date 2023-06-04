@@ -1,9 +1,14 @@
 # Ideas list
 
-1. Why I'm blogging - writing practice
-2. AWS assert role
-3. Another option on the Prime Video post
+1. Platforms and WASM
+2. Another option on the Prime Video post
+3. RSS setup
+4. AWS assert role
 
-# Blog TODO
+# Logo
 
-- https://gohugo.io/content-management/urls/
+```
+- *
+-*-*
+****
+```
