@@ -1,5 +1,4 @@
 ---
-# post comment
 title: "Platforms, Not Products"
 date: 2023-06-04T15:00:00-04:00
 tags: ["architecture"]
@@ -17,4 +16,4 @@ I read Steve's Platforms post after adding event-based triggering to my ML Pipel
 
 The orchestration code hook is stored in the ML model git repo and managed by the Data Science team. A custom Cloudwatch event of type `data_lake:table_loaded` triggers one of the ML Pipelines, and the Step Function will invoke the code hook to determine which phases to run. These phases include data prep, training, inference, and post-processing. The hook is executed in a Lambda function, and its interface is modeled after the Lambda handler. The `event` passed to the code hook is the unwrapped Eventbridge event. The `context` parameter contains properties like ML model name to allow code sharing across models without modification. Future iterations of this interface will add other methods to simplify consumer code like `get_snowflake_connection()`. After preparing the event and context objects, the Data Science team code hook file is imported via a dynamic module load as specified in the [python importlib docs](https://docs.python.org/3/library/importlib.html#importing-a-source-file-directly). The result returned from the function call determines choice states later in the Step Function to select specific phases to run. We have started using this system for basic conditions, but the sky is the limit for the future. The determination can be based on data drift, upstream data quality, or any other future requirements.
 
-Next week - how WASM enables Platforms!
+Next week - [how WASM enables Platforms](/2023/wasm-for-platforms/)!

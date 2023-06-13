@@ -2,7 +2,7 @@
   To open external links in new tab:
   https://gohugo.io/templates/render-hooks/#link-with-title-markdown-example
 
-  For now, all links starting with "http" are opened in new tab.
-  Later can fine-tune with a dynamic condition of base URL to only be external links and still keep links within blogs absolute.
+  For now, all links starting with "http" are opened in new tab.  Relative links within the site keep in same tab.
+  TODO adjust templating code to transform relative links into absolute links using the hugo baseURL property.
  -->
 <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
