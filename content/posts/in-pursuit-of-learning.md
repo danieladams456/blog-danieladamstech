@@ -6,6 +6,8 @@ linkedin: "In Pursuit of Learning - how the last stage of a DIY plumbing job was
 
 We interrupt our regularly scheduled programming to bring you this breaking news... Truly. I was going to write a post on _Team Topologies_ I read for an upcoming [book club](https://brianchambers.substack.com/p/chamber-of-tech-secrets-757). Now, that will be pushed to next week. :)
 
+![Pressure Reducing Valve](https://images.danieladamstech.com/2023-pressure-reducing-valve.jpg)
+
 ## Preconditions
 
 Our hot water heater had stopped working, and we were thinking it was probably the heating element. I got some advice to at least call a plumber and see what they would charge since it was a bit tedious to do the repair. When the plumber came out, he also checked the house's water pressure. It was around 95 PSI when it should have been under 80 to prevent damage to the interior plumbing. We knew we wanted the hot water heater fixed, and the water pressure issue seemed to be a problem waiting to happen if not addressed.
