@@ -13,5 +13,5 @@ if [[ "$GIT_BRANCH" == "main" ]]; then
   hugo
 else
   # CF_PAGES_BRANCH set, so implies build in Cloudflare
-  hugo --buildDrafts --baseURL "$CF_PAGES_URL"
+  hugo --baseURL "$CF_PAGES_URL" --buildDrafts --buildFuture
 fi
