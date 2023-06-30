@@ -6,7 +6,7 @@ linkedin: "In Pursuit of Learning - how the last stage of a DIY plumbing job was
 
 We interrupt our regularly scheduled programming to bring you this breaking news... Truly. I was going to write a post on _Team Topologies_ I read for an upcoming [book club](https://brianchambers.substack.com/p/chamber-of-tech-secrets-757). Now, that will be pushed to next week. :)
 
-![Pressure Reducing Valve](https://images.danieladamstech.com/2023-pressure-reducing-valve.jpg)
+![Pressure Reducing Valve](https://images.danieladamstech.com/2023-pressure-reducing-valve-small.jpg)
 
 ## Preconditions
 
