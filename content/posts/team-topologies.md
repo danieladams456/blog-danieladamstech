@@ -53,31 +53,27 @@ There are several types of cognitive load, and some are healthier than others. K
 
 Try to make teams as static as possible. Shifting people around for initial implementation and leaving others behind for support might not provide adequate level of ongoing work on that system. Optimize team structure for long term evolution, not short term "special" projects.
 
-"Flow of change" optimized, low friction organizations and environments are inversely related to handoffs.
-⁃ Corollary: any governance and security should happen as part of the flow (ideally automated async) and ideally not require a handoff to a person.
+"Flow of change" optimized, low friction organizations are inversely related to the number of handoffs.
 
-DevOps is an organizational pattern more than it is tooling. Have to get the feedback of running system performance back to devs as directly as possible.
-⁃ question: just say you're coming from an Dev team plus Ops team. You align the same headcount into two stream aligned teams. How do you train everyone up to not just have two functions split in the same team?
+- Corollary: any governance and security should happen as part of the flow (ideally automated async) and not require a handoff to a person.
+- Platform teams should interact via code interfaces and not through manually filled tickets. Allow devs to create pipelines from catalog. Permissions requests for those apps are service requests (ideally PRs linked to SNOW for auditing).
+  - Product teams need support via simplification of other concerns through interfaces (maintained by platform teams) to keep the cognitive load where it should be and focus on domain concerns.
+- Review team dependencies and explicitly accept them or change process to remove them.
 
-Product teams need support via simplification of other concerns through interfaces (maintained by platform teams) to keep the cognitive load where it should be and focus on domain concerns.
+DevOps is an organizational mindset and communication pattern more than it is tooling. Have to get the feedback of running system performance back to devs as directly as possible. "DevOps teams" should be only an enabling (educating) team for transition period and have an end date. SRE teams are sometimes needed, but only for large scale. Stream-aligned teams can own those responsibilities at small scale. SRE teams are paired with one or a couple specific steam aligned teams. This pairing requires a high level of engineering discipline on everyone's part to not devolve into "us vs them."
 
-Cloud team should make things self service and not be in the loop.
-⁃ allow devs to create pipelines from catalog. Permissions requests for those apps are service requests (ideally PRs linked to SNOW for auditing).
-
-SRE teams are just for large scale. Small scale, devs can own that. SRE teams are paired with one or couple specific steam aligned teams. Requires a high level of engineering discipline on everyone's part to not devolve into "us vs them."
-
-"DevOps teams" should be only for transition and have an end date.
-
-Review team dependencies and explicitly accept them or change process to remove them.
+**Question**: Just say you're coming from an Dev team plus Ops team. You align the same headcount into two stream-aligned teams. How do you train everyone up to not just have two functions split within the same team?
 
 ### Chapter 5
 
-Stream aligned teams a specific product or customer persona. They are mixed discipline.
-Enabling teams allow stream aligned teams to acquire missing capabilities or figure thinks that take more research/trials. They act as educators with the goal of making the stream aligned teams more self sufficient.
-Platform teams abstract things to reduce cognitive load. They should measure themselves on ease of use and value derived from their services. "Thinnest viable platform."
-Complicated subsystems teams are generally due to complexity of algorithms involved in their software, like video codecs. Decision is driven by cognitive load, not desire to create an interface to share software to multiple consumers.
+The book now gets into the four fundamental team topologies, hence the title.
 
-If platforms are large enough (), they might have their own stream-aligned, complicated subsystem, and platform teams within. The platform still appears as a single entity and consumed via a single API by the line of business teams.
+1. Stream-aligned teams serve a specific product or customer persona. They are multi-disciplinary for end-to-end software requirements, design, delivery, operation, and security. These have commonly been referred to as platform teams, but the book prefers the term stream-aligned team since it is more broadly applicable. This is because the customer value stream might flow through multiple products, or one product could be broken up into multiple independent work streams.
+2. Platform teams abstract things to reduce cognitive load. They should measure themselves on ease of use and value derived from their services. "Thinnest viable platform" is a mantra these teams should strive for.
+3. Enabling teams allow stream-aligned teams to acquire missing capabilities or figure things that take more research or trials. They act as educators with the goal of making the stream-aligned teams more self sufficient. These teams are generally time-bound, at least with respect to a specific team they are serving. They don't do the work, but point out strategies that can be applied. This makes me think of hearing about the [AWS Cryptography Bar Raiser](https://aws.amazon.com/blogs/security/aws-security-profiles-matthew-campagna-sr-principal-security-engineer-cryptography/) program in a Re:Invent talk (not to be confused with an [Interview Bar Raiser](https://medium.com/geekculture/memoirs-of-an-amazon-bar-raiser-718e36241310)).
+4. Complicated subsystems teams are generally due to complexity of algorithms involved in their software, like video codecs. The decision to create this type of team is driven by cognitive load, not desire to create an interface to share software to multiple consumers. Many companies won't need these teams unless they are doing something very specialized.
+
+If platforms are large enough, they might have their own stream-aligned, complicated subsystem, and platform teams within. The platform still appears as a single entity and consumed via a single API by the top level of stream-aligned teams.
 
 ### Chapter 6
 
@@ -86,9 +82,10 @@ Speed of delivery necessitates correct team boundaries to enable autonomy.
 Types of hidden monoliths
 
 Fracture planes: where you can cleanly split software
-⁃ business domain
-⁃ Regulatory or risk level
-⁃ Time zones for geographically split teams (Conway's law)
+
+- business domain
+- Regulatory or risk level
+- Time zones for geographically split teams (Conway's law)
 
 ### Chapter 7
 
