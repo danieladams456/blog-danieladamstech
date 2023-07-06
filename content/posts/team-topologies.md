@@ -55,7 +55,7 @@ Try to make teams as static as possible. Shifting people around for initial impl
 
 "Flow of change" optimized, low friction organizations are inversely related to the number of handoffs.
 
-- Corollary: any governance and security should happen as part of the flow (ideally automated async) and not require a handoff to a person.
+- Corollary: Any governance and security should happen as part of the flow (ideally automated async) and not require a handoff to a person.
 - Platform teams should interact via code interfaces and not through manually filled tickets. Allow devs to create pipelines from catalog. Permissions requests for those apps are service requests (ideally PRs linked to SNOW for auditing).
   - Product teams need support via simplification of other concerns through interfaces (maintained by platform teams) to keep the cognitive load where it should be and focus on domain concerns.
 - Review team dependencies and explicitly accept them or change process to remove them.
@@ -68,24 +68,24 @@ DevOps is an organizational mindset and communication pattern more than it is to
 
 The book now gets into the four fundamental team topologies, hence the title.
 
-1. Stream-aligned teams serve a specific product or customer persona. They are multi-disciplinary for end-to-end software requirements, design, delivery, operation, and security. These have commonly been referred to as platform teams, but the book prefers the term stream-aligned team since it is more broadly applicable. This is because the customer value stream might flow through multiple products, or one product could be broken up into multiple independent work streams.
-2. Platform teams abstract things to reduce cognitive load. They should measure themselves on ease of use and value derived from their services. "Thinnest viable platform" is a mantra these teams should strive for.
-3. Enabling teams allow stream-aligned teams to acquire missing capabilities or figure things that take more research or trials. They act as educators with the goal of making the stream-aligned teams more self sufficient. These teams are generally time-bound, at least with respect to a specific team they are serving. They don't do the work, but point out strategies that can be applied. This makes me think of hearing about the [AWS Cryptography Bar Raiser](https://aws.amazon.com/blogs/security/aws-security-profiles-matthew-campagna-sr-principal-security-engineer-cryptography/) program in a Re:Invent talk (not to be confused with an [Interview Bar Raiser](https://medium.com/geekculture/memoirs-of-an-amazon-bar-raiser-718e36241310)).
-4. Complicated subsystems teams are generally due to complexity of algorithms involved in their software, like video codecs. The decision to create this type of team is driven by cognitive load, not desire to create an interface to share software to multiple consumers. Many companies won't need these teams unless they are doing something very specialized.
+1. **Stream-aligned** teams serve a specific product or customer persona. They are multi-disciplinary for end-to-end software requirements, design, delivery, operation, and security. These have commonly been referred to as platform teams, but the book prefers the term stream-aligned team since it is more broadly applicable. This is because the customer value stream might flow through multiple products, or one product could be broken up into multiple independent work streams.
+2. **Platform** teams abstract things to reduce cognitive load. They should measure themselves on ease of use and value derived from their services. "Thinnest viable platform" is a mantra these teams should strive for.
+3. **Enabling** teams allow stream-aligned teams to acquire missing capabilities or figure things that take more research or trials. They act as educators with the goal of making the stream-aligned teams more self sufficient. These teams are generally time-bound, at least with respect to a specific team they are serving. They don't do the work, but point out strategies that can be applied. This makes me think of hearing about the [AWS Cryptography Bar Raiser](https://aws.amazon.com/blogs/security/aws-security-profiles-matthew-campagna-sr-principal-security-engineer-cryptography/) program in a Re:Invent talk (not to be confused with an [Interview Bar Raiser](https://medium.com/geekculture/memoirs-of-an-amazon-bar-raiser-718e36241310)).
+4. **Complicated subsystem** teams are generally due to complexity of algorithms involved in their software, like video codecs. The decision to create this type of team is driven by cognitive load, not desire to create an interface to share software to multiple consumers. Many companies won't need these teams unless they are doing something very specialized.
 
 If platforms are large enough, they might have their own stream-aligned, complicated subsystem, and platform teams within. The platform still appears as a single entity and consumed via a single API by the top level of stream-aligned teams.
 
 ### Chapter 6
 
-Speed of delivery necessitates correct team boundaries to enable autonomy.
+Speed of delivery necessitates correct team boundaries to enable autonomy. The first half of the chapter covers types of hidden monoliths. Most people are familiar with these. One of the common ones I've seen a good bit of is the joined-at-the-database monolith. Data dependencies between apps sharing a database make it hard to break apps off and move the system of record elsewhere. Ongoing backfilling of the original database from the new system is necessary to keep the other apps working. That is just for a one-way dependency; it gets almost impossibly complex with multi-master datasets where more than app modifies shared data.
 
-Types of hidden monoliths
+Fracture planes are lines where you can cleanly split software when dividing responsibilities between stream-aligned teams.
 
-Fracture planes: where you can cleanly split software
-
-- business domain
-- Regulatory or risk level
-- Time zones for geographically split teams (Conway's law)
+- Business domain: As popularized by the book [Domain-Driven Design](https://www.domainlanguage.com/ddd/), this approach attempts to put different areas of the business into bounded contexts. Examples could include billing, sales, underwriting, etc. This is one that is unlikely to be done exactly right on the first shot, so it will need to morph over time as better boundaries are found.
+- Regulatory or risk level: An example of this would be [PCI-DSS](https://listings.pcisecuritystandards.org/documents/PCI_DSS-QRG-v3_2_1.pdf) systems in a retailer.
+- Performance isolation: At work, we keep performance sensitive things separated from other processes that have much lower SLAs. We don't want a process that needs to run within two days to impact a process that needs sub-second response time.
+- Time zones for geographically split teams: This fracture plane harkens back to Conway's law and the desire to maintain efficient communication within a team. I remember the AWS [Firecracker microVM](https://firecracker-microvm.github.io/) team being all located somewhere in Europe. I think it was this office in [Romania](https://www.amazon.jobs/en/locations/bucharest-romania).
+- Others: change cadence, technology, user personas, etc.
 
 ### Chapter 7
 
