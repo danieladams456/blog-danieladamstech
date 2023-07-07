@@ -1,7 +1,6 @@
 ---
 title: "Team Topologies"
-date: 2023-07-03T12:00:00-04:00
-draft: true
+date: 2023-07-06T22:00:00-04:00
 ---
 
 I went out on a limb and signed up for a [book club](https://brianchambers.substack.com/p/chamber-of-tech-secrets-757), hoping to glean some useful concepts and see what interesting people I might meet at discussion time. As a side note, this was the first time I had heard about [Chatham House Rule](https://en.wikipedia.org/wiki/Chatham_House_Rule). It lays a groundwork for an open discussion of ideas and kind of reminds me of open-source software licenses. 😃
