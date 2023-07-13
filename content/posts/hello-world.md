@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: 2023-05-29T06:00:00-04:00
-tags: ["writing"]
+tags: ["writing", "blog"]
 ---
 
 Two things came together to lead me to start this blog. Exploring new tech has been a desire for a while. The other, writing, is a recent realization of necessity. My personal goal is to write one post a week for the next year.

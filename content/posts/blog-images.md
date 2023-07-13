@@ -1,6 +1,7 @@
 ---
 title: "Blog Images"
 date: 2023-06-29T20:00:00-04:00
+tags: ["blog"]
 ---
 
 When I started writing, I anticipated it would be mostly text with the [occasional diagram](https://github.com/danieladams456/aws-assert-role/blob/main/docs/aws-assert-role.png) included. But my [most recent post](/2023/in-pursuit-of-learning/) was long enough I figured a picture might make it a bit more interesting.
