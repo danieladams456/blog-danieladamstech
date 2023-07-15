@@ -32,6 +32,10 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
+  # later need to see how this scales,
+  # could have to limit to latest N articles
+  # or add a continuation link after ".Summary".
+  ShowFullTextinRSS: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShareButtons:
