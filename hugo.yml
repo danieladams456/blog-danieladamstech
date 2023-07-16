@@ -6,6 +6,8 @@ title: Daniel Adams Tech
 baseURL: https://blog.danieladamstech.com
 languageCode: en-us
 paginate: 10
+# limit number of posts in RSS since including full text
+rssLimit: 20
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -20,11 +22,6 @@ taxonomies:
 
 permalinks:
   posts: /:year/:title/
-
-services:
-  rss:
-    # limit number of posts in RSS since including full text
-    limit: 20
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
