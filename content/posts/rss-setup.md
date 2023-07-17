@@ -1,7 +1,7 @@
 ---
 title: "Rss Setup"
 date: 2023-07-17T06:00:00-04:00
-draft: true
+tags: ["blog"]
 ---
 
 I like RSS as an idea/protocol as well as a reading experience. It is one of the few places on the internet where you can consume only desired content and don't have algorithms pushing something else. Pulling RSS feeds from various sites embodies the peer-to-peer nature of the internet. Over time, we have swayed toward central entities being our conduit to information contained on other sites (Google, Facebook, Twitter, link aggregators like Reddit).
