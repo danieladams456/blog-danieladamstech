@@ -1,5 +1,5 @@
 ---
-title: "Rss Setup"
+title: "RSS Setup"
 date: 2023-07-17T06:00:00-04:00
 tags: ["blog"]
 ---
