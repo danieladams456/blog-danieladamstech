@@ -6,6 +6,8 @@ title: Daniel Adams Tech
 baseURL: https://blog.danieladamstech.com
 languageCode: en-us
 paginate: 10
+# limit number of posts in RSS since including full text
+rssLimit: 20
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -32,6 +34,10 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
+  # later need to see how this scales,
+  # could have to limit to latest N articles
+  # or add a continuation link after ".Summary".
+  ShowFullTextinRSS: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShareButtons:
@@ -58,8 +64,6 @@ params:
       url: "https://github.com/danieladams456"
     - name: linkedin
       url: "https://www.linkedin.com/in/danieladams15"
-
-  cover:
 
   ### Reviewed above this comment ###
 
