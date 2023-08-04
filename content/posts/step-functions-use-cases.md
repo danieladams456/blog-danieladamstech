@@ -1,7 +1,7 @@
 ---
 title: "Step Functions Use Cases"
 date: 2023-08-03T20:00:00-04:00
-draft: true
+linkedin: "My take on some considerations for AWS Step Functions, inspired by the Prime Video blog post."
 ---
 
 The Prime Video team made some waves back in March when they [wrote about refactoring their distributed microservices application into a monolith](https://www.primevideotech.com/video-streaming/scaling-up-the-prime-video-audio-video-monitoring-service-and-reducing-costs-by-90). It was a topic of various Medium and LinkedIn posts. Then two weeks later Werner Vogels published a follow-up post [Monoliths are not Dinosaurs](https://www.allthingsdistributed.com/2023/05/monoliths-are-not-dinosaurs.html). Generally, Werner is presenting about microservices and distributed event-driven architectures at Re:Invent, but he seemed to step in here to say engineering judgment is important and microservices are not always the right decision. At scale, actually profiling the workload is important. Converting media is a CPU-intensive process, but through empirical testing, the team found it was cheaper to transcode more than once than to pass around the files via S3.
