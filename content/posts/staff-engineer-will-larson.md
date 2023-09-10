@@ -6,7 +6,7 @@ tags: ["staff engineering", "books"]
 
 Last weekend I was painting the boys' room and signed up for an Audible trial for some longer-form content than my typical podcasts. I'm not the fastest painter, clocking about 5 hours for cleaning, taping, and clean up and 6 for painting. By the end, the room looked great and the boys were very happy. As mentioned in a previous post, I'll listen to Will Larson's [StaffEng podcast](https://podcast.staffeng.com) while driving to work. Those interviews have been so informative that I selected to listen to his synthesized book [Staff Engineer: Leadership beyond the management track.](https://staffeng.com/book)
 
-{{< figure src="https://staffeng.com/StaffEngCoverHero.png" align="center">}}
+{{< figure src="https://images.danieladamstech.com/2023-will-larson-staff-engineer-book-cover.png" align="center">}}
 
 Will starts the book by categorizing staff+ engineers he's interviewed into the following buckets by behavior.
 
