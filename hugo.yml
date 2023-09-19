@@ -42,6 +42,13 @@ markup:
     lineNos: true
     # style: monokai
 
+# additional output formats required for search: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Daniel Adams Tech
