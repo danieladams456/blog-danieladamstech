@@ -23,6 +23,36 @@ taxonomies:
 permalinks:
   posts: /:year/:title/
 
+menu:
+  main:
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 30
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# might not be live? https://gohugo.io/content-management/syntax-highlighting/
+# see /layouts/_default/_markup/render-link.html for opening external links in new tab
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    lineNos: true
+    # style: monokai
+
+# additional output formats required for search: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Daniel Adams Tech
@@ -101,22 +131,3 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-
-menu:
-  main:
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# might not be live? https://gohugo.io/content-management/syntax-highlighting/
-# see /layouts/_default/_markup/render-link.html for opening external links in new tab
-markup:
-  highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    lineNos: true
-    # style: monokai
