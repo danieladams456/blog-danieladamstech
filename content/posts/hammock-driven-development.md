@@ -1,7 +1,8 @@
 ---
 title: "Hammock Driven Development"
 date: 2023-09-26T03:45:00-04:00
-draft: true
+tags: ["software engineering"]
+linkedin: "The story of this morning - waking up with an idea at 3:45..."
 ---
 
 _...Or how good ideas sometimes come in the middle of the night._
@@ -10,9 +11,9 @@ An episode of the Big Ideas in App Architecture podcast introduced me to a set o
 
 The premise of hammock driven development is that thinking about a topic over a long enough period of linear time causes the subconscious mind to prioritize it. Prefer a week or more in the conscious thought space; it won't happen with cramming for a day or two. That conscious prioritization lets your mind know it is something you want it to work on in the background. That can lead to an aha moment when you're not expecting it. An implication of the timeline is that you should start thinking about projects and problems on the horizon with a good bit of lead time before you need to implement a solution. This will give you enough time to really digest the options. Who knows, this could all be a [bunch of hooey.](https://dictionary.cambridge.org/us/dictionary/english/hooey)
 
-I tend to do my best thinking in the morning before kids get up and before coming into the office since the house is quiet. I was one of those college students that would use the quiet study zone in the library to do my math homework. Today, I woke up at 3:45 with a generic idea of how the API I was trying to refactor could interact in a generic way with the data mapper to denormalize into the desired DynamoDB object structure. I thought through this from 3:45 to 4:30 and took some notes. Then I tried to go back to sleep, but unfortunately that didn't work out. :P
+I tend to do my best thinking in the morning before the kids get up and before coming into the office since the house is quiet. I was one of those college students who would use the quiet study zone in the library to do my math homework. Today, I woke up at 3:45 with a generic idea of how the API I was trying to refactor could interact in a generic way with the data mapper to denormalize into the desired DynamoDB object structure. I thought through this from 3:45 to 4:30 and took some notes. Then I tried to go back to sleep, but unfortunately, that didn't work out. :P
 
-The goal in modeling this API as defaults + overrides is being able to recategorize properties in the future between shared and specific to a service type.
+The goal in modeling this API as defaults + overrides is gaining the ability to recategorize properties in the future between shared and specific to a service type.
 
 ## Data Service Notes
 
@@ -35,15 +36,15 @@ leaf: ProfileServiceTypeConfig
 
 Pivot to more static, less dynamic:
 
-`It will probably be easier to validate required fields through annotations if they are statically either in root or leaf. Same 400 status code could be returned with a custom exception during data mapping, but then lose the automatic spring boot validation root cause analysis in RFC ProblemDetail error returned.`
+`It will probably be easier to validate required fields through annotations if they are statically either in root or leaf. The same 400 status code could be returned with a custom exception during data mapping, but then lose the automatic spring boot validation root cause analysis in RFC ProblemDetail error returned.`
 
-`It's still an easy mapping change to move a property from one to the other. Also solves the read structure (knowing which properties to include at the root vs leaf level) without reflection.`
+`It's still an easy mapping change to move a property from one to the other. Also solves the read structure (knowing which properties to include at the root vs. leaf level) without reflection.`
 
 ## Rest of the Morning
 
 1. Bible reading
-2. Pushups and dumbbell rows listening to morse code ([CRSnet streams](https://streammyaudio.com/archive))
-3. Yogurt and nuts listening to [All-In podcast](https://www.youtube.com/@allin)
+2. Pushups and dumbbell rows listening to Morse code ([CRSnet streams](https://streammyaudio.com/archive))
+3. Yogurt and nuts listening to the [All-In podcast](https://www.youtube.com/@allin)
 4. Shower and developing the idea for this blog post
 5. Writing blog post
-6. Planning on hitting Chick-fil-a for a chicken biscuit for second breakfast on the way in to work.
+6. Planning on hitting Chick-fil-A for a chicken biscuit for second breakfast on the way in to work.
