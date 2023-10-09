@@ -1,8 +1,8 @@
 ---
-title: "Influence vs Persuasion?"
+title: "Influence or Persuasion?"
 date: 2023-10-07T21:00:00-04:00
 tags: ["books", "philosophy"]
-linkedin: "The book Influence started a much deeper train of thought around ethics than I was expecting.  What influence principles should only be used in a defensive manner than employing them yourself?"
+linkedin: "The book Influence lead me down a much deeper train of thought around ethics than I was expecting.  What influence principles should only be used in a defensive manner and not employed on others?"
 ---
 
 I was given the book [_Influence_](https://www.influenceatwork.com/) by a coworker to help me work on leadership skills. She warned me that the book bordered on the social engineering side of influence. Boy, was that correct! The book goes into our natural instincts and reactions to others' behavior and how those patterns can be leveraged. One thing I thought was interesting and underscored the real-life applications of these theories were the studies referenced in the book. Experiments and quantitative data collection proved these theories out empirically.
