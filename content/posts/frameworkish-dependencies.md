@@ -1,11 +1,11 @@
 ---
 title: "Framework-ish Dependencies"
-date: 2023-10-12T20:18:02-04:00
+date: 2023-10-14T18:00:00-04:00
 tags: ["software engineering"]
-draft: true
+linkedin: "Which types of dependencies cause the most pain on upgrades?"
 ---
 
-In software development, we generally must use dependencies to efficiently get more complex functionality we don't want to write ourselves. However, there are some types of dependencies that prove to be more painful when maintaining software than others. Less dependencies leads to less upgrade work including less security vulnerability remediation work. Below I rank categories of dependencies with respect to likelihood to have coupling issues during framework upgrades.
+In software development, we generally must use dependencies to efficiently get more complex functionality we don't want to write ourselves. However, there are some types of dependencies that prove to be more painful when maintaining software than others. Fewer dependencies leads to less upgrade work including less security vulnerability remediation work. Below I rank categories of dependencies with respect to the likelihood to have coupling issues during framework upgrades.
 
 ## The Dependencies
 
@@ -14,21 +14,21 @@ In software development, we generally must use dependencies to efficiently get m
 2. **Not ideal, but necessary:** coupled to the framework, but necessary functionality
    - [SpringFox](https://springfox.github.io/springfox/) for [OpenAPI spec](https://swagger.io/specification/) generation
 3. **Probably not necessary:** small uses of convenience functions or premature optimizations
-   - Pulling in the full [Apache Commons Collections](https://commons.apache.org/proper/commons-collections/) just for `CollectionUtils.isNotEmpty`, overriding to use [Apache HTTP client](https://hc.apache.org/index.html) instead of the Spring Boot default for a low-traffic service
+   - Pulling in the full [Apache Commons Collections](https://commons.apache.org/proper/commons-collections/) just for `CollectionUtils.isNotEmpty()`, explicitly overriding to use [Apache HTTP client](https://hc.apache.org/index.html) instead of the Spring Boot default for a low-traffic service
 4. **Bad:** tightly coupled to the framework but not officially supported by the framework team
    - [Derjust Spring Data DynamoDB](https://github.com/derjust/spring-data-dynamodb) stopped being maintained but required major code reorganization to remove.
 
 ## The Story
 
-I was upgrading a small service that persisted configuration data in DynamoDB and called a couple upstream APIs. It was developed and deployed to prod, but never fully adopted. A couple of years later, there were new requirements and changes needed to make it usable. Upgrading this service gave me an ah-ha moment regarding types of dependencies and the level of upgrade risk they bring with them. After glancing at the original state of the service, here were my goals: Upgrade Spring Boot 2.0.6 to 3.1.x, Java 8 to 17, remove unofficial [spring-data-dynamodb.](https://github.com/derjust/spring-data-dynamodb), and upgrade AWS Java SDK v1 to v2. There wasn't any issue with AWS SDK v1, but I wanted some experience with v2 since that's what we'll be using for net-new services.
+I was upgrading a small service that persisted configuration data in DynamoDB and called a couple of upstream APIs. It was developed and deployed to prod, but never fully adopted. A couple of years later, there were new requirements and changes needed to make it usable. Upgrading this service gave me an ah-ha moment regarding types of dependencies and the level of upgrade risk they bring with them. After glancing at the original state of the service, here were my goals: Upgrade Spring Boot 2.0.6 to 3.1.x, Java 8 to 17, remove unofficial [spring-data-dynamodb.](https://github.com/derjust/spring-data-dynamodb), and upgrade AWS Java SDK v1 to v2. There wasn't any issue with AWS SDK v1, but I wanted some experience with v2 since that's what we'll be using for net-new services.
 
-Only after I had started bumping Spring Boot versions did I realize that the unofficial Spring Boot DynamoDB dependency was last released January of 2019 (four and a half years ago.) That release only supported up to Spring Boot 2.1. [Spring Boot 2.5](https://docs.spring.io/spring-boot/docs/2.5.x/reference/html/getting-started.html#getting-started.system-requirements) was the first release to support Java 17. The upgrade path would have had to be remove Spring Data DynamoDB, upgrade to Spring Boot 2.5, Java 17, Spring Boot 3.1. Along the way would have been a Junit 4 to 5 migration and SpringFox to [SpringDoc.](https://springdoc.org/) The code had a good bit of extra dependencies, boilerplate copy/paste servlet filters and loggers, etc. All those together lead me to write a minimal service from scratch on Spring Boot 3.1 and Java 17.
+Only after I had started bumping Spring Boot versions did I realize that the unofficial Spring Boot DynamoDB dependency was last released in January of 2019 (four and a half years ago.) That release only supported up to Spring Boot 2.1. [Spring Boot 2.5](https://docs.spring.io/spring-boot/docs/2.5.x/reference/html/getting-started.html#getting-started.system-requirements) was the first release to support Java 17. The upgrade path would have been to remove Spring Data DynamoDB, upgrade to Spring Boot 2.5, Java 17, Spring Boot 3.1. Along the way would have been a Junit 4 to 5 migration and SpringFox to [SpringDoc.](https://springdoc.org/) The code had a good bit of extra dependencies, boilerplate copy/paste servlet filters and loggers, etc. All those together led me to write a minimal service from scratch on Spring Boot 3.1 and Java 17.
 
-I utilized MapStruct to map between the API data format shared properties + overrides by and the denormalized set of records in DynamoDB. I wanted to do as much as possible with immutable Java records instead of Lombok-annotated data classes. The DynamoDB enhanced client came through and was compatible with Records following the same pattern [this documentation](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-use-immut.html) shows with classes.
+I utilized MapStruct to map between the API data format of shared properties + overrides and the denormalized set of records in DynamoDB. I wanted to do as much as possible with immutable Java records instead of Lombok-annotated data classes. The DynamoDB enhanced client came through and was compatible with Records following the same pattern [this documentation](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-en-client-use-immut.html) shows with classes.
 
 ## The Code
 
-### DynamoDB mapper immutable entity
+**DynamoDB mapper immutable entity**
 
 ```java
 @DynamoDbImmutable(builder = DemoEntity.DemoEntityBuilder.class)
@@ -52,7 +52,7 @@ public record DemoEntity(
 }
 ```
 
-### DTO to entity mapper
+**DTO to entity mapper**
 
 ```java
 @Mapper(componentModel = "spring")
