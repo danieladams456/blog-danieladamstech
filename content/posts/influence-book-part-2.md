@@ -1,7 +1,7 @@
 ---
 title: "Influence Book: Part 2"
 date: 2023-10-24T21:00:00-04:00
-draft: true
+linkedin: "Topics from the book Influence by Dr. Robert Cialdini: Contrast, Reciprocation, Commitment + Consistency, and Social Proof."
 ---
 
 [_Influence_](https://www.influenceatwork.com/) by Dr. Robert Cialdini covers some useful and intriguing psychological constructs that shape how we act in society. As I mentioned in my [previous post,](/2023/influence-or-persuasion/) one must take care in applying ethics to the situation and analyzing which subset of tactics is acceptable.
