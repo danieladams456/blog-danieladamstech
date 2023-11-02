@@ -20,3 +20,13 @@ WHERE
 ```
 
 This query works as long as the first and last hop queries can uniquely retrieve transactions under measurement. For example, if two different transactions in the last hop microservice made a call to the same uninstrumented DNS name, the second half of the query would pull in more traces and skew the timing. NewRelic [recently rolled out](https://newrelic.com/blog/how-to-relic/subquery-joins) [subquery joins.](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/nrql-query-tutorials/subquery-joins/) It has some cardinality restrictions, but I could see if those were meaningful if the need arose to more strictly match trace IDs instead of just taking the aggregate of two populations. One situation I'm thinking of as I write this post is if the entrypoint service errors and quickly returns. That drives down the first number to nearly instantaneous while the second number is only accounting for transactions that made it all the way to last hop service. The metric could go negative in that case.
+
+I wrote up a variation that does a join to combat that issue. The query does give accurate results. While the other query can cover a long timeseries, this one is relatively limited due to I'm assuming the cardinality requirements of the join. It also does not seem allowed for an alert query, even without the "limit max". I'll continue to work with NewRelic to figure a workaround. I might end up falling back to creating another custom attribute on the entrypoint service that allows me to only select the desired traces for the "filter()" style query.
+
+```sql
+From Span
+  JOIN (FROM Span SELECT trace.id , duration  as innerDuration where appName = 'Last Hop to Include' and name = 'External/destination.corp.net/CommonsHttp/execute' LIMIT MAX)
+  on trace.id
+SELECT percentile(duration - innerDuration, 90) as entrypointLayerDuration
+  WHERE (appName = 'Entrypoint Layer' and TransactionCustomAttributeName = 'CustomValue') LIMIT MAX
+```
