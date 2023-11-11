@@ -25,14 +25,18 @@ permalinks:
 
 menu:
   main:
+    - identifier: book-list
+      name: book list
+      url: /book-list/
+      weight: 20
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 20
+      weight: 30
     - identifier: search
       name: search
       url: /search/
-      weight: 30
+      weight: 40
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # might not be live? https://gohugo.io/content-management/syntax-highlighting/
