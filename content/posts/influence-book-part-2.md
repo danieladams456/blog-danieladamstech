@@ -1,6 +1,7 @@
 ---
 title: "Influence Book: Part 2"
 date: 2023-10-24T21:00:00-04:00
+tags: ["books"]
 linkedin: "Topics from the book Influence by Dr. Robert Cialdini: Contrast, Reciprocation, Commitment + Consistency, and Social Proof."
 ---
 
