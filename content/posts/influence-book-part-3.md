@@ -9,7 +9,15 @@ This is the last post chronicling the reading of the book [_Influence_](https://
 
 ### Chapter 5: Liking
 
+It is better to be liked than not liked. Surprise! But what types of liking are there? The books lists five: physical attractiveness, similarity, compliments, contact plus cooperation, and association. The various "liking" factors can produce a halo effect where one aspect of a person is noticed and prevents the observer from seeing a more wholistic picture. Halo effect is one of the [performance review biases](https://blog.pragmaticengineer.com/performance-review-biases/) covered in Gergely Orosz's [The Software Engineer's Guidebook.](https://www.engguidebook.com/) I just received my copy last week! I need to finish up a couple of other in-progress books on my [book list,](https://blog.danieladamstech.com/book-list/) and then I will read that one.
+
+Working towards positive outcomes with teamwork leads to liking. As you can imagine, two cabins of boys at camp can develop a rivalry, especially if there are competitive games between the groups. Once this competitive spirit has grown, it can lead to negative connotations and attacks on the personal character of the other group. A research study let this feeling mount and then tested how effectively it could be reversed. To trigger the reversal, the researchers constructed scenarios where the two groups of boys needed to work together. These situations included the food transport truck being stuck and an issue with the water pipes. Both situations lead to the groups working together to come to a solution.
+
+In the corporate world, related but separate teams can come together to accomplish something and build interpersonal bonds. Many times, different teams working on the same project are approaching it from different angles. This leads them to value different things on the way towards the common goal. Team-building activities can proactively strengthen relationships and lead to higher levels of empathy for counterpart team's objectives and methods. When I was on the Cloud/Data Engineering team, the Data Engineering team and the Enterprise Data Management Office team volunteered together several times at the local food bank. Now I'm on the Strategic Customer Technology (Integrations) team. Just last week we did a full day [Habitat for Humanity house build](https://www.linkedin.com/feed/update/urn:li:activity:7128544886449983488/) with our business-side counterpart, the Customer Solutions team.
+
 ### Chapter 6: Authority
+
+The prime research example
 
 ### Chapter 7: Scarcity
 
