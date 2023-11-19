@@ -14,7 +14,7 @@ date: 2023-11-10T20:00:00-05:00
 - **Engineering Leadership**
   - [Staff Engineer: Leadership beyond the management track](https://staffeng.com/book) - [blog post](https://blog.danieladamstech.com/2023/staff-engineer-by-will-larson/)
   - [Team Topologies](https://teamtopologies.com/) - [blog post](https://blog.danieladamstech.com/2023/team-topologies/)
-  - [Influence: The Psychology of Persuasion](https://www.influenceatwork.com/) - [blog post 1](https://blog.danieladamstech.com/2023/influence-or-persuasion/), [part 2](https://blog.danieladamstech.com/2023/influence-book-part-2/), [part 3](https://blog.danieladamstech.com/2023/influence-book-part-3/)
+  - [Influence: The Psychology of Persuasion](https://www.influenceatwork.com/) - [blog post 1,](https://blog.danieladamstech.com/2023/influence-or-persuasion/) [part 2,](https://blog.danieladamstech.com/2023/influence-book-part-2/) [part 3](https://blog.danieladamstech.com/2023/influence-book-part-3/)
 
 ## To Read
 
