@@ -17,7 +17,13 @@ In the corporate world, related but separate teams can come together to accompli
 
 ### Chapter 6: Authority
 
-The prime research example
+[The Milgram study](https://en.wikipedia.org/wiki/Milgram_experiment) showed surprising results of compliance to authority, even when obeying caused physical pain to another person. The subject of the experiment played the role of a "teacher" that would deliver increasingly strong shocks to the "learner" when an incorrect response was given. The most enlightening data point was the inaccuracy of estimation of at what point the "teacher" would stop following the researcher's instructions. A group of "colleagues, graduate students, and psychology majors at Yale University (where the experiment was performed)" estimated that only 1-2 percent of people would continue on to the end. As it turned out, no one stopped before 2/3 of the way through the experiment. 65% continued all the way to the end, even when the "learner" stated he had a heart condition.
+
+Methods for claiming authority include titles, clothes (security guard uniform, business suit), and other trappings like exotic cars. The book treated each of these individually, but one thing I wonder is how closely they are linked as a proxy for wealth and social status. What is the difference in behavior of a subject in response to an authority figure with direct influence on the subject vs with respect to a "powerful" high social class figure where there is no direct line of authority?
+
+[James 2:2-4](https://www.bible.com/bible/59/JAS.2.ESV) calls out this dishonorable tendency to defer to wealthy people based on their clothing:
+
+> For if a man wearing a gold ring and fine clothing comes into your assembly, and a poor man in shabby clothing also comes in, and if you pay attention to the one who wears the fine clothing and say, “You sit here in a good place,” while you say to the poor man, “You stand over there,” or, “Sit down at my feet,” have you not then made distinctions among yourselves and become judges with evil thoughts?
 
 ### Chapter 7: Scarcity
 
