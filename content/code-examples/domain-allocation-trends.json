@@ -1,0 +1,48 @@
+{
+  "positions": [
+    {
+      "name": "IT Development Program - 4 rotations",
+      "years": 2,
+      "allocations": {
+        "cloud": 25,
+        "data": 25,
+        "security": 50
+      }
+    },
+    {
+      "name": "Junior Solutions Architect - architecture team",
+      "years": 3,
+      "allocations": {
+        "software": 40,
+        "cloud": 40,
+        "security": 20
+      }
+    },
+    {
+      "name": "Cloud Engineer - build cloud team",
+      "years": 1.5,
+      "allocations": {
+        "cloud": 75,
+        "security": 25
+      }
+    },
+    {
+      "name": "Cloud Engineer - build cloud data team",
+      "years": 1.5,
+      "allocations": {
+        "cloud": 25,
+        "data": 50,
+        "security": 25
+      }
+    },
+    {
+      "name": "Senior Software Engineer - external APIs",
+      "years": 0.75,
+      "allocations": {
+        "software": 70,
+        "cloud": 20,
+        "security": 10
+      }
+    }
+  ]
+}
