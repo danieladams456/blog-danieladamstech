@@ -6,11 +6,13 @@ date: 2023-11-10T20:00:00-05:00
 ## Reading
 
 - [The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change](https://noidea.dog/staff)
+- [Never Split the Difference: Negotiating as if Your Life Depended on It](https://www.blackswanltd.com/never-split-the-difference)
 
 ## Read
 
 - **Engineering**
   - [Designing Data Intensive Applications](https://dataintensive.net/) (pre-blog era)
+  - [The Software Engineer's Guidebook: Navigating senior, tech lead, and staff engineer positions at tech companies and startups](https://www.engguidebook.com/)
 - **Engineering Leadership**
   - [Staff Engineer: Leadership beyond the management track](https://staffeng.com/book) - [blog post](https://blog.danieladamstech.com/2023/staff-engineer-by-will-larson/)
   - [Team Topologies](https://teamtopologies.com/) - [blog post](https://blog.danieladamstech.com/2023/team-topologies/)
@@ -19,7 +21,6 @@ date: 2023-11-10T20:00:00-05:00
 ## To Read
 
 - [How to Win Friends and Influence People](https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People)
-- [The Software Engineer's Guidebook: Navigating senior, tech lead, and staff engineer positions at tech companies and startups](https://www.engguidebook.com/)
 - [The Engineering Executive's Primer: Impactful Technical Leadership](https://lethain.com/eng-execs-primer/)
 - [Kill It with Fire: Manage Aging Computer Systems](https://www.oreilly.com/library/view/kill-it-with/9781098128883/)
 
