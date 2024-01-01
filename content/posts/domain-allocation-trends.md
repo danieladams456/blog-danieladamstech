@@ -8,7 +8,7 @@ I was thinking about how to best chronicle my career so far showcasing the varie
 I had the look I wanted in mind but wasn't sure how to implement it. My first concept was a stacked bar graph with variable width bars depending on my time in the position. Stacked bar graphs were easy, I did not find many resources on variable width bars. The [Python Graph Gallery](https://python-graph-gallery.com/) led me to realize a [stacked area chart](https://python-graph-gallery.com/251-stacked-area-chart-with-seaborn-style/) would be a natural fit. By increasing the number of points, the shape would asymptotically approach a variable-width stacked bar graph. Using the number of months as the width gave me a visually pleasing slope angle at the transition points and was logical as well! Removing the percentile ticks on the Y axis and customizing label positioning on the X completed the graph.
 
 ![Domain allocation trends graph](https://images.danieladamstech.com/2023-daniel-adams-domain-allocation-trends.svg)
-See the [Python notebook](https://github.com/danieladams456/blog-danieladamstech/blob/main/content/code-examples/domain-allocation-trends.ipynb) and [JSON definition](https://github.com/danieladams456/blog-danieladamstech/blob/main/content/code-examples/domain-allocation-trends.json) I used to make this graph.
+See the [Python notebook](https://github.com/danieladams456/blog-danieladamstech/blob/main/content/code-examples/domain-allocation-trends/domain-allocation-trends.ipynb) and [JSON definition](https://github.com/danieladams456/blog-danieladamstech/blob/main/content/code-examples/domain-allocation-trends/domain-allocation-trends.json) I used to make this graph.
 
 ### My Tech Journey
 
