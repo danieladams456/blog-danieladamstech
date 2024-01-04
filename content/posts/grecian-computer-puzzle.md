@@ -1,7 +1,6 @@
 ---
 title: "Grecian Computer Puzzle"
-date: 2024-01-01T14:24:50-05:00
-draft: true
+date: 2024-01-14:00:00-05:00
 ---
 
 My sister got me the [Grecian Computer Brainteaser Puzzle](https://www.amazon.com/True-Genius-Grecian-Computer/dp/B08469GT8K) for Christmas. My first thought was: _"Should I write a program to brute force it or go the cryptanalysis route to find a weakness?"_ After a bit of playing, I didn't expect to have the time I would need to look into the positional relationships to the level necessary for a manual solution. I then pivoted to think about how I would solve it programmatically.
