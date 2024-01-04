@@ -6,6 +6,8 @@ draft: true
 
 My sister got me the [Grecian Computer Brainteaser Puzzle](https://www.amazon.com/True-Genius-Grecian-Computer/dp/B08469GT8K) for Christmas. My first thought was: _"Should I write a program to brute force it or go the cryptanalysis route to find a weakness?"_ After a bit of playing, I didn't expect to have the time I would need to look into the positional relationships to the level necessary for a manual solution. I then pivoted to think how I would solve it programmatically.
 
+Here is my [Python notebook solution.](https://github.com/danieladams456/blog-danieladamstech/blob/main/content/code-examples/grecian-computer-puzzle/puzzle.ipynb)
+
 ![Puzzle Solution](https://images.danieladamstech.com/2023-grecian-computer-puzzle-small.jpg)
 
 My math professor used to have a saying of "brute force and sheer ignorance" approach. Unless the computational complexity proved too much, that was going to be my first angle of attack. I would run through each of the possible shifts, add up the numbers in each column, and print out if there was a match.
