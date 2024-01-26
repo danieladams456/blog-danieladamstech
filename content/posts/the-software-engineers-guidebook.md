@@ -18,10 +18,9 @@ The current balance I am trying to strike is how to best spend my time between c
 
 ### Be Known as Someone Who Delivers
 
-- _actually_ deliver
-- do the right amount of selling it - not too much or too little
-- Focus, don't get spread too thin
-- Know what your #1 priority is and always deliver that on time
+A prerequisite for being known as someone who delivers is to **actually** deliver. You should first be consistent, dependable, and meet or exceed the quality bar (see later about quality not being the end-all-be-all in some situations.) Then you can worry about if others are recognizing your results. It is important to not put the cart before the horse and try to sell something that's not there. Even when you are solid on the behavior, selling it can require walking a tightrope. You need to get a feel for what is acceptable in the engineering culture and not deviate too far from the norm. You don't want to come off as someone who just cares about their image more than the actual business outcomes. On the flip side, you don't want to sit on the sidelines assuming your work will speak for yourself in a company where there is an expectation to self-promote.
+
+Avoid spreading yourself too thin in order to deliver meaningful work. My biggest takeaway from the book was "**know your #1 priority and always deliver that on time**." This priority should be stable for at least a week. Within the week, switching to a new #1 priority and should require managerial escalation and approval. I thought I was going to be able to use this and it be revolutionary... Turns out, it still doesn't mean you can just work on one or two things at a time. We are currently working on a major upgrade to one of our core business systems. There were three things we identified the Integrations team needed to contribute for customer rollout over a period of six weeks. Those were data synchronization from an on-prem system of record to the cloud, orchestration service updates, and new capabilities for our customer support tooling. The first two items were in the request path and had a dependency, so I took them. The third was independent, so I was hoping to get the request-path items done first and then start guiding someone on the support tooling. The good news was an offshore contractor had availability sooner than expected, so I am involved in breaking down the work for him sooner than I expected. At the end of the day, the timeline is still on track working on all three in parallel, just with a bit more context switching.
 
 ### Be Flexible and Adaptable
 
