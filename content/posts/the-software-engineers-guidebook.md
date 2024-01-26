@@ -65,3 +65,9 @@ Gergely's taxonomy of software architect traits helped me introspect and see whe
   - The detailed documenter
   - The new, shiny chaser
   - The old-schooler
+
+### Wrap Up
+
+I would recommend this book for anyone in the first ten years of their software engineering career or for those wanting insight into what it means to be a "good developer" in big tech. It covers all the "need to knows," allowing you to feel comfortable you're not missing anything important in your mental model of how high quality software engineers should function. If you know me IRL, I would be happy to loan out this book. I currently have [Team Topologies](https://blog.danieladamstech.com/2023/team-topologies/) loaned out to business-side counterpart I used to work with when I was on the cloud data engineering team.
+
+I am about sliding off my fence-straddling position into a paid subscription to Gergely's [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/) newsletter.`:)`The problem is a couple months ago I went on a Substack free subscription spree and now need to figure which others I need to cut to make time!
