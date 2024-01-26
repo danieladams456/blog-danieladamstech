@@ -49,6 +49,8 @@ Avoid spreading yourself too thin in order to deliver meaningful work. My bigges
 
 ### Architect Traits
 
+Gergely's taxonomy of software architect traits helped me introspect and see where I fall among these characteristics. This list still requires business need awareness to pick which angle to adopt. While most people will have a personality tendency towards a subset of these traits, we need to honestly evaluate the business needs and be willing to adjust from our position of comfort to better serve the business. The new-shiny chaser and the old-schooler are the obvious dichotomy. But it is potentially hard to be both a coding machine and leave enough time for being the approachable one. Those are two I try to balance.
+
 - More Theoretical
   - The ivory tower architect
   - Painfully precise
