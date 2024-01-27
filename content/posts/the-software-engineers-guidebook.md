@@ -40,15 +40,18 @@ Another type of flexibility engineers can develop the ability to thrive in eithe
 
 ### Project management
 
-- Build the right things. Stakeholder management/communication, understanding the business. These two go hand-in-hand
 - estimating section made me think of [Stepping Stones, not Milestones.](https://medium.com/@jamesacowling/stepping-stones-not-milestones-e6be0073563f)
 - "software physics" - tradeoff between timeline, people, and scope. When one goes down, at least one of the other two must go up. Fact of life, no getting around it. Working more hours is included as an option for people going up.
-- I generally provide a stakeholder update at the end of the week of what progress we have made and what is the direction for the upcoming week.
+
+One of the ground rules in project management is to build the right thing. Engineers should work closely enough with the business that they can be a trusted extension of the business's decision-making. Alignment and knowing how your business counterpart would respond in various situations allows you to inform and move ahead rather than having to ask and wait for feedback. Stakeholder management is an important skill to be successful as a tech lead. You must ensure all stakeholders feel their input was taken seriously and all parties can arrive at a shared consensus of the project's goals and requirements. During execution you need to keep them updated on progress, decision points, and risks. I generally provide a stakeholder update at the end of the week of what progress we have made and what is the direction for the upcoming week.
+
+Estimations are always a challenge, but the vast majority of businesses need them. Sometimes multiple engineering teams need to roll out a joint effort around the same date. Other times Marketing will need to coordinate publicity around a product launch. Always the estimate will factor into the decision of if something is worth doing now, later, or never. The book coins the term "Triangle of Software Physics" consisting of the variables People, Scope, and Timeline. Just like the [ideal gas law,](https://en.wikipedia.org/wiki/Ideal_gas_law) when one variable changes, one or more others must counter to maintain equilibrium. The most common change of which everyone is familiar is increasing scope! The only solution to that is increase the people or extend the timeline. [The Mythical Man-Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month) states that simply adding new people to a project that is behind is unlikely to speed it up. Thus many times people end up working overtime or pushing out other tasks to focus more on the project at hand.
 
 ### Building Reliable Software
 
-- Strategies for shipping to production. This is mainly around test strategies and rollout tooling stratified by different types of companies.
-- Monitoring/alerting
+Software reliability is a passion of mine. I don't know that my interest is full-bore SRE, but is skews towards that side. The book covers both the traditional monitoring and alerting topics as well as processes how companies safely ship to production. These practices on shipping to production are broken down between startups, traditional companies, larger tech companies, and Facebook. It was insightful to compare the various patterns along the dimensions of speed (latency and time spent) and safety. Facebook and Amazon have two different release strategies despite being at the same maturity due to the differing product risk. A bad update to Amazon RDS databases is a completely different thing than a bad update to Facebook's trending algorithm. After CI checks and code review, Facebook launches an automated canary rollout across 4 successive environments (automated test, employees, small market, all users.)
+
+This week I gave a lunch-and-learn on Monitoring and Observability. I highlighted some of the improvements I had worked on for our team over the past quarter. They included starting a NewRelic Terraform project for our team that managed alert policies/routing, alert conditions, and synthetics. I'm a big fan of infrastructure as code, and this was a step to get consistency across our environments. I also gathered feedback on an RFC I had lead about baseline monitoring expectations for our services.
 
 ### Architect Archetypes
 
