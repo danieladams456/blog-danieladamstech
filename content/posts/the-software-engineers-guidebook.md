@@ -24,9 +24,11 @@ Avoid spreading yourself too thin in order to deliver meaningful work. My bigges
 
 ### Be Flexible and Adaptable
 
-- know how to deliver what the company needs
-- Product vs Platform teams
-- Peacetime vs Wartime at companies
+Flexibility and Adaptability are critical skills for delivering what is needed in the way it is needed. A company might be in a phase where speed is valued over quality - finding product market fit or launching a feature to catch up with a competitor that is taking your business. Or the company might have reached a point where stability and earning customers' trust is paramount. The interesting thing is that the progression between those extremes is not a monotonically increasing function. There are forces that can cause oscillation between the two. Gergely cites the example of a startup going into a funding round vs one that just completed a funding round. The book includes an insightful comparison table between peacetime and wartime behaviors and leadership styles along a dozen different dimensions. For example, conflict is acceptable in a wartime company as long as it gets things done. Not so much in a peacetime company - relationships are the higher priority.
+
+As I mention later in the Architect Archetypes section, sometimes the company's needs don't exactly align with our default personality or behavior. That's ok. As software engineers, we should be comfortable in a relatively wide range of modes. [Impedance matching power transfer](https://en.wikipedia.org/wiki/Impedance_matching#Power_transfer) is an interesting parallel to an engineer's fit with company needs. In ham radio, we use radios and coax cable with 50 ohm impedances. The goal is to get the antenna's impedance as close to 50 ohms as possible to maximize power transfer. Power that is not transferred from the cable into the antenna is reflected back towards the radio and raises the [standing wave ratio or SWR.](https://en.wikipedia.org/wiki/Standing_wave_ratio) We use antennas designed to match 50 ohms as closely as possible or use transformers to lower the impedance to the target. A software engineer will be able to do their best work when companies needs align within the range of what they are most comfortable producing. The broader the acceptable range, the more options you have.
+
+Another type of flexibility engineers can develop the ability to thrive in either a product or platform team. Both teams build for their customers, but the types of inputs they get vary widely. Product teams have metrics that are easy to align with the business (new users, churn, revenue) while platform teams have an additional layer of indirection (engineering time saved, cost savings against a moving target.) At large companies, platform teams have the highest leverage since they can improve cross-cutting concerns for the whole organization. The best thing you can do as an engineer is to contribute on both team types. I spent more time on the platform side, so I wanted to switch over to a product team. Changing it up gave me a new energy for building a different type of deliverable.
 
 ### Leverage Through Writing
 
@@ -41,13 +43,14 @@ Avoid spreading yourself too thin in order to deliver meaningful work. My bigges
 - Build the right things. Stakeholder management/communication, understanding the business. These two go hand-in-hand
 - estimating section made me think of [Stepping Stones, not Milestones.](https://medium.com/@jamesacowling/stepping-stones-not-milestones-e6be0073563f)
 - "software physics" - tradeoff between timeline, people, and scope. When one goes down, at least one of the other two must go up. Fact of life, no getting around it. Working more hours is included as an option for people going up.
+- I generally provide a stakeholder update at the end of the week of what progress we have made and what is the direction for the upcoming week.
 
 ### Building Reliable Software
 
 - Strategies for shipping to production. This is mainly around test strategies and rollout tooling stratified by different types of companies.
 - Monitoring/alerting
 
-### Architect Traits
+### Architect Archetypes
 
 Gergely's taxonomy of software architect traits helped me introspect and see where I fall among these characteristics. This list still requires business need awareness to pick which angle to adopt. While most people will have a personality tendency towards a subset of these traits, we need to honestly evaluate the business needs and be willing to adjust from our position of comfort to better serve the business. The new-shiny chaser and the old-schooler are the obvious dichotomy. But it is potentially hard to be both a coding machine and leave enough time for being the approachable one. Those are two I try to balance.
 
