@@ -12,7 +12,7 @@ date: 2023-11-10T20:00:00-05:00
 
 - **Engineering**
   - [Designing Data Intensive Applications](https://dataintensive.net/) (pre-blog era)
-  - [The Software Engineer's Guidebook: Navigating senior, tech lead, and staff engineer positions at tech companies and startups](https://www.engguidebook.com/)
+  - [The Software Engineer's Guidebook: Navigating senior, tech lead, and staff engineer positions at tech companies and startups](https://www.engguidebook.com/) - [blog post](https://blog.danieladamstech.com/2024/the-software-engineers-guidebook/)
 - **Engineering Leadership**
   - [Staff Engineer: Leadership beyond the management track](https://staffeng.com/book) - [blog post](https://blog.danieladamstech.com/2023/staff-engineer-by-will-larson/)
   - [Team Topologies](https://teamtopologies.com/) - [blog post](https://blog.danieladamstech.com/2023/team-topologies/)

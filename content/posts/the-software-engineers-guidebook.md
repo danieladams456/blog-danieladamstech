@@ -1,12 +1,14 @@
 ---
-title: "The Software Engineers Guidebook"
+title: "The Software Engineer's Guidebook"
 date: 2024-01-10T21:00:00-05:00
 linkedin: "Here are my notes from The Software Engineer's Guidebook.  I would recommend this book for anyone in the first ten years of their software engineering career or for those wanting insight into what it means to be a good developer in big tech. It covers all the need-to-knows, allowing you to feel comfortable that you're not missing anything important in your mental model of how high-maturity software engineers should function."
 ---
 
 In my time off between Christmas and New Year, I generally read a book. Two great non-tech books I've read in past years are [Range: Why Generalists Triumph in a Specialized World](https://davidepstein.com/the-range/) and [The Spy and the Traitor: The Greatest Espionage Story of the Cold War](https://www.penguinrandomhouse.com/books/253399/the-spy-and-the-traitor-by-ben-macintyre/) on [Oleg Gordievsky.](https://en.wikipedia.org/wiki/Oleg_Gordievsky) Both of those were gifts from my brother.
 
-This year's book was [The Software Engineer's Guidebook](https://www.engguidebook.com/) by Gergely Orosz. I am a reader of his newsletter, [The Pragmatic Engineer.](https://newsletter.pragmaticengineer.com/) The book traces through all software engineering career levels and highlights important practices to be following at each. I wanted to read through all of them and catch up on any tips or behaviors I had missed along the way. Below are groupings of advice I found helpful. The
+This year's book was [The Software Engineer's Guidebook](https://www.engguidebook.com/) by Gergely Orosz. I am a reader of his newsletter, [The Pragmatic Engineer.](https://newsletter.pragmaticengineer.com/) The book traces through all software engineering career levels and highlights important practices to be following at each. I wanted to read through all of them and catch up on any tips or behaviors I had missed along the way. Below are groupings of advice I found helpful.
+
+![The Software Engineer's Guidebook](https://images.danieladamstech.com/2024-software-engineers-guidebook-small.jpg)
 
 ### Own Your Own Career
 
