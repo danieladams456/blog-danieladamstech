@@ -1,7 +1,7 @@
 ---
 title: "The Software Engineers Guidebook"
-date: 2024-01-10T21:06:58-05:00
-draft: true
+date: 2024-01-10T21:00:00-05:00
+linkedin: "Here are my notes from The Software Engineer's Guidebook.  I would recommend this book for anyone in the first ten years of their software engineering career or for those wanting insight into what it means to be a "good developer" in big tech. It covers all the need-to-knows, allowing you to feel comfortable that you're not missing anything important in your mental model of how high-maturity software engineers should function."
 ---
 
 In my time off between Christmas and New Year, I generally read a book. Two great non-tech books I've read in past years are [Range: Why Generalists Triumph in a Specialized World](https://davidepstein.com/the-range/) and [The Spy and the Traitor: The Greatest Espionage Story of the Cold War](https://www.penguinrandomhouse.com/books/253399/the-spy-and-the-traitor-by-ben-macintyre/) on [Oleg Gordievsky.](https://en.wikipedia.org/wiki/Oleg_Gordievsky) Both of those were gifts from my brother.
@@ -73,6 +73,6 @@ Gergely's taxonomy of software architect traits helped me introspect and see whe
 
 ### Wrap Up
 
-I would recommend this book for anyone in the first ten years of their software engineering career or for those wanting insight into what it means to be a "good developer" in big tech. It covers all the "need to knows," allowing you to feel comfortable that you're not missing anything important in your mental model of how high-maturity software engineers should function. If you know me IRL, I would be happy to loan out this book. I currently have [Team Topologies](https://blog.danieladamstech.com/2023/team-topologies/) loaned out to a business-side counterpart I worked with when I was on the cloud data engineering team.
+I would recommend this book for anyone in the first ten years of their software engineering career or for those wanting insight into what it means to be a "good developer" in big tech. It covers all the need-to-knows, allowing you to feel comfortable that you're not missing anything important in your mental model of how high-maturity software engineers should function. If you know me IRL, I would be happy to loan out this book. I currently have [Team Topologies](https://blog.danieladamstech.com/2023/team-topologies/) loaned out to a business-side counterpart I worked with when I was on the cloud data engineering team.
 
 I am about to slide off my fence-straddling position into a paid subscription to Gergely's [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/) newsletter.`:)`The problem is a couple of months ago I went on a Substack free subscription spree and now need to figure which others to cut to make time!
