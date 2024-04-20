@@ -19,6 +19,8 @@ The two domains we'll be looking at are **Ham radio digital voice** and **first-
 - [Yaesu System Fusion (YSF)](https://systemfusion.yaesu.com/what-is-system-fusion/)
 - Analog predecessor: [Frequency Modulation (FM)](https://en.wikipedia.org/wiki/Frequency_modulation)
 
+D-STAR was the first of the main three digital voice modes by a long shot, starting development back in the 1990's. Then YSF launched in 2013, and DMR came from the commercial space to amateur space in 2014. YSF sought to improve on the status quo in the area of compatibility with analog FM through automatic mode detection and switching. It was never truly published as an open specification, which made some have reservations about adopting. DMR published its first set of specs (tier 1 and tier 2) in 2005 and tier 3 in 2012. Commercial radio manufacturers adopted the standard and began making products. Despite the standard being "commercial-first" and implementations less friendly for amateur use, the on-air protocol had advantages. The main one was that it uses [time-division multiple access](https://en.wikipedia.org/wiki/Time-division_multiple_access) to multiplex two conversations on the same frequency channel. Multiple concurrent data streams is something we are used to now in packet and IP based systems we have today, but historically, radio voice transmission had been a single stream per frequency.
+
 ### First-Person-View Video Transmitters
 
 - [DJI O3](https://www.dji.com/o3-air-unit)
