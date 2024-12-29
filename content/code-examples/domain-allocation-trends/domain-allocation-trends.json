@@ -20,7 +20,7 @@
     },
     {
       "name": "Cloud Engineer - build cloud team",
-      "years": 1.5,
+      "years": 1.3,
       "allocations": {
         "cloud": 75,
         "security": 25
@@ -37,7 +37,7 @@
     },
     {
       "name": "Senior Software Engineer - external APIs",
-      "years": 0.75,
+      "years": 1.75,
       "allocations": {
         "software": 70,
         "cloud": 20,
