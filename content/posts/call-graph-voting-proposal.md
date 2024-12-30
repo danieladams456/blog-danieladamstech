@@ -15,4 +15,10 @@ Two benefits can come out of this.
 1. Combine multiple error conditions into semantic levels.  This allows for monitoring complexity to stay semi-bounded as the number of error conditions grows.
 2. Fault assignment allows SLO creation.  Without a higher level categorization, SLO inclusion/exclusion logic can be brittle.
 
+> We don't solely rely on standard HTTP response codes to decide if a request is successful or not.  Classically 200 "that's great," 500 is "error and our fault," 400 is "error and your fault."
+> 
+>  That's too simple.  We don't do that.  There are lots of legitimate 400 responses that are kind of routine and expected.  You can't just page on them all the time.
+
+[David Reaver, How Stripe achieves five and a half 9s of availability, Re:Invent 2024](https://youtu.be/7vn49exuYxo?t=1576)
+
 What do you think?  Should we just attach very explicit business meaning to HTTP codes?  Does leaving them decoupled retain more flexibility for changing alert severity while still keeping API response codes stable?
