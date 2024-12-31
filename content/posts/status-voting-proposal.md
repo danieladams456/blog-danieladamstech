@@ -1,9 +1,8 @@
 ---
 title: "Status Voting Proposal"
 date: 2024-12-28T22:00:00-05:00
-draft: true
 state_transition_diagram: "https://excalidraw.com/#json=oz2RSuqym48A08QRlUlN6,khbUiOf7EYXFRwdOcKsYzw"
-voting_diagram: "https://excalidraw.com/#json=QKEtzpNrjXxyySQeDOh3W,GrnKxae4vPtjXBwNuwNW_Q"
+voting_diagram: "https://excalidraw.com/#json=AjeXqF7CbAxiFKVsDLORX,mUTJZx-lIvVE0o0SNwLBxQ"
 ---
 
 We all have errors.  What is your nominal error rate?  Does that include customer errors or just internal errors?  Is everyone on the same page about that?
@@ -50,7 +49,7 @@ We need a voting algorithm to merge all reported statuses into a final status.  
 
 This data flow diagram shows how state is updated inside each service as well as passed between services.  I only show 5 services and a database, but this could scale to very large call graphs as the data added to the response remains a constant size.
 
-![data flow](https://images.danieladamstech.com/2024-voting-data-flow-tmp.png)
+![data flow](https://images.danieladamstech.com/2024-voting-data-flow.png)
 
 The data flow looks similar to distributed tracing, but there are a couple of important differences.  At scale, distributed tracing samples only a small percentage of requests, while this status reporting mechanism runs on every single request.  Distributed tracing also passes IDs between services and then uploads trace data to a monitoring service by ID.  This design just passes a *value* back in response headers or in a metadata section of the response body.  Those two differences make this cost-effective to run on every request.
 
