@@ -2,6 +2,8 @@
 title: "Call Graph Voting Proposal"
 date: 2024-12-28T22:00:00-05:00
 draft: true
+state_transition_diagram: "https://excalidraw.com/#json=oz2RSuqym48A08QRlUlN6,khbUiOf7EYXFRwdOcKsYzw"
+voting_diagram: "https://excalidraw.com/#json=QKEtzpNrjXxyySQeDOh3W,GrnKxae4vPtjXBwNuwNW_Q"
 ---
 
 We all have errors.  What is your nominal error rate?  What does that mean - all errors or just internal errors?  Is everyone on the same page about that?
@@ -44,6 +46,10 @@ We need a voting algorithm to merge all reported statuses into a final status.  
 * Customer errors are more specific than unclear arrribution errors.  Customer data validation errors are more specific than generic customer data errors.
 
 ![status state machine](https://images.danieladamstech.com/2024-status-state-machine.png)
+
+![data flow](https://images.danieladamstech.com/2024-voting-data-flow-tmp.png)
+
+I'm sure the data flow looks similar to distributed tracing, but there are a couple of important differences.  Distributed tracing is generally only a small percentage of sampled requests at scale, while this status reporting mechanism runs on every single request.  Distributed tracing also passes IDs between services and then uploads trace data via that ID to a monitoring service.  This design just passes *values* back as response headers or in a metadata section of the response body.  Those two differences make this cost effective to run on every request.
 
 ## Feedback
 What do you think?  Should we just attach very explicit business meaning to HTTP codes?  Does leaving them decoupled retain more flexibility for evolving categorizations while keeping the system API stable?  Are there existing standards or frameworks I can research that accomplish a similar objective?
