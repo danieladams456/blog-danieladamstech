@@ -1,5 +1,5 @@
 ---
-title: "Call Graph Voting Proposal"
+title: "Status Voting Proposal"
 date: 2024-12-28T22:00:00-05:00
 draft: true
 state_transition_diagram: "https://excalidraw.com/#json=oz2RSuqym48A08QRlUlN6,khbUiOf7EYXFRwdOcKsYzw"
