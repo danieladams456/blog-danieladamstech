@@ -39,7 +39,11 @@ Errors can occur at any level of the call graph and before, during, or after wor
 * During: an upstream service or DB is unavailable.
 * After: two DB or RPC calls are made, then an error occurs merging the results.
 
-We need a voting algorithm
+We need a voting algorithm to merge all reported statuses into a final status.  That final status should primarily favor the highest severity and secondarily specificity.  We can visualize this as settling into local minimums on a response surface graph.
+* Customer errors are higher severity than success.  Internal errors are higher severity than customer errors.
+* Customer errors are more specific than unclear arrribution errors.  Customer data validation errors are more specific than generic customer data errors.
+
+![status state machine](https://images.danieladamstech.com/2024-status-state-machine.png)
 
 ## Feedback
 What do you think?  Should we just attach very explicit business meaning to HTTP codes?  Does leaving them decoupled retain more flexibility for evolving categorizations while keeping the system API stable?  Are there existing standards or frameworks I can research that accomplish a similar objective?
