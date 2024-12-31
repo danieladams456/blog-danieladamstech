@@ -6,15 +6,16 @@ state_transition_diagram: "https://excalidraw.com/#json=oz2RSuqym48A08QRlUlN6,kh
 voting_diagram: "https://excalidraw.com/#json=QKEtzpNrjXxyySQeDOh3W,GrnKxae4vPtjXBwNuwNW_Q"
 ---
 
-We all have errors.  What is your nominal error rate?  What does that mean - all errors or just internal errors?  Is everyone on the same page about that?
+We all have errors.  What is your nominal error rate?  Does that include customer errors or just internal errors?  Is everyone on the same page about that?
 
 There's two aspects I believe need solved.
 1. Error reporting **precision**: More granular status categorization than HTTP codes get you by themselves, including ambiguity of fault assignment.  This also covers APIs that only use a single HTTP code, like industry-specific XML APIs that report status in the body.
 2. Error reporting **accuracy**: Propogation of and voting on fault assignment as requests travel through depth and breadth of a microservice call graph.
 
 Solving these challenges reaps benefits.
-1. Accurate fault assignment allows SLO creation.  Without a higher level categorization, SLO inclusion/exclusion logic can be brittle.
-2. Combine multiple error conditions into semantic levels.  This allows for monitoring complexity to stay bounded as the number of error conditions grows.
+1. Straightforward, readable monitoring queries.  Fault assignment is already pre-computed, avoiding the need for brittle queries.  Query conditions stay bounded as system size and failure modes grow.
+2. Business-approved category definitions leads to understandable SLOs that resonate.
+3. Your choice of rough or fine-grain status buckets is available depending on the monitoring or reporting use case.  Use rough grain for more anomaly detection statistical power, fine grain for a jump start on troubleshooting.
 
 <!-- Finalize: categorization vs classification.  Is classification more "fixed" in terms of buckets? -->
 ## Categorization
@@ -34,7 +35,7 @@ Here was a quote from David Reaver in his talk [How Stripe achieves five and a h
 Things can get tricky on conditionally required data.  A business rule upstream could necessitate an additional piece of data only sent in 1% of circumstances.  Is this a validation error or a calculation error?  This is why, irrespective of which categories your business chooses, they must be defined precisely.  The catorizations provided here are a starting point to jog ideas.  Each organization should agree on a set that covers all their incoming transactions.  The organization can then have a shared nomenclature, leading to more accurate commmunication.
 
 ## Voting
-The second goal of this proposal is to increase error reporting accuracy via delegating and voting.  Whether you have microservices, a modular monolith, or any other design, there will be abstractions.  These abstractions shield complexity but also shield information.  Ultimately, we want to know the status of the final response to the customer, but the high abstraction component packaging it up might not know the details on why a failure occurred.  The solution is a structured and predictable way to pass and merge status from all levels on the call graph response path.
+The second goal of this proposal is to increase error reporting **accuracy** via delegating and voting.  Whether you have microservices, a modular monolith, or any other design, there will be abstractions.  These abstractions shield complexity but also shield information.  Ultimately, we want to know the status of the final response to the customer, but the high abstraction component packaging it up might not know the details on why a failure occurred.  The solution is a structured and predictable way to pass and merge status from all levels on the call graph response path.
 
 Errors can occur at any level of the call graph and before, during, or after work.
 * Before: a request comes in, validation fails, and immediatly returns.
@@ -46,6 +47,8 @@ We need a voting algorithm to merge all reported statuses into a final status.  
 * Customer errors are more specific than unclear arrribution errors.  Customer data validation errors are more specific than generic customer data errors.
 
 ![status state machine](https://images.danieladamstech.com/2024-status-state-machine.png)
+
+This data flow diagram shows how state is updated inside each service as well as what is passed between services.  I only show 5 services and a database, but this could scale to very large call graphs as the data added on the response remains a constant size.
 
 ![data flow](https://images.danieladamstech.com/2024-voting-data-flow-tmp.png)
 
