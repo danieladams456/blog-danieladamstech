@@ -1,5 +1,5 @@
 ---
-title: "Status Voting Proposal"
+title: "Transaction Status Voting Proposal"
 date: 2024-12-31T20:00:00-05:00
 state_transition_diagram: "https://excalidraw.com/#json=oz2RSuqym48A08QRlUlN6,khbUiOf7EYXFRwdOcKsYzw"
 voting_diagram: "https://excalidraw.com/#json=AjeXqF7CbAxiFKVsDLORX,mUTJZx-lIvVE0o0SNwLBxQ"
